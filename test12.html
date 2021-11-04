@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1>BMI Calculor</h1>
-    <hr>
-    น้ำหนักตัว(kg.)
-    <br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง (Cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวณ</button>
-    <br>
-    BMI
-    <br>
-    <span id="bmiValue">0</span> 
-    <br><br>
-    <span id="bmiResult">การแปลผล BMI</span> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,400;0,600;1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        div {
+            font-family: Niramit;
+            border-radius: 20px;
+        }
 
+        h1 {
+            text-align: center;
+        }
+
+        #st1 {
+            text-align: center;
+            background-color: #B9FFFC;
+            margin: auto;
+            width: 1000px;
+        }
+
+        #calBMI {
+            width: 250px;
+            height: 50px;
+            background-color: #A3D8F4;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            box-shadow: -9px -9px 16px rgb(255 255 255 / 80%), 9px 9px 16px rgb(216 221 228 / 80%);
+            font-size: 25px;
+        }
+
+        #calBMI:hover {
+            background-color: #9AB3F5;
+        }
+        #bmiValue ,#bmiResult{
+            font-size: 30px;
+        }
+        body{
+            background-color: rgb(169, 201, 233);
+        }
+    </style>
+</head>
+
+<body >
+    <div id="st1">
+        <h1>BMI Calculor</h1>
+        <hr width="80%">
+        <h2>น้ำหนักตัว(kg.)</h2>
+        <br>
+        <input type="number" name="" id="weight"
+            style="border: 0; border-bottom: outset; background-color: #B9FFFC; width: 300px; height: 50px; font-size: 40px;">
+        <br>
+        <h2>ส่วนสูง (Cm.)</h2>
+        <br>
+        <input type="number" name="" id="height"
+            style="border: 0; border-bottom: outset; background-color: #B9FFFC; width: 300px; height: 50px; font-size: 40px;" >
+        <br><br>
+        <button id="calBMI">คำนวณ</button>
+        <br><br>
+
+        <div>
+            <h2 font-size='40px'>BMI</h2>
+            <span id="bmiValue">0</span>
+            <br>
+            <span id="bmiResult">การแปลผล BMI</span>
+            <br>
+        </div>
+
+    </div>
 
     <script src="./js/script12.js"></script>
 </body>
+
 </html>
